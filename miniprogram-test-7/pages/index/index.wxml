@@ -1,0 +1,18 @@
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+  <view style="display:flex;">
+    <label>微信号：</label>
+    <input name="userName" placeholder="最好选择玩家登录！" />
+  </view>
+  <view style="display:flex;">
+    <label>微信登录密码：</label>
+    <input name="psw" placeholder="玩家登录有奖励呦！" password="true" />
+  </view>
+  <view style="display:flex;margin-top:20px;">
+    <button style="width:30%;" formType="submit" >微信玩家登录</button>
+    <button style="width:30%" formType="reset" >游客快速登录</button>
+  </view>
+</form>
+<view>{{tip}}</view>
+<view>{{userName}}</view>
+<view>{{psw}}</view>
+
